@@ -142,6 +142,13 @@ class DiscountHistoryAdmin(admin.ModelAdmin):
         }),
     )
 
+    def has_add_permission(self, request) -> bool:
+        return False
+
+
+    def has_change_permission(self, request) -> bool:
+            return False
+
 class PriceHistoryAdmin(admin.ModelAdmin):
     list_display = ('product_variant', 'old_price', 'new_price', 'changed_at', 'created_at', 'updated_at')
     search_fields = ('product_variant__product__name', 'old_price', 'new_price')
@@ -156,6 +163,13 @@ class PriceHistoryAdmin(admin.ModelAdmin):
             'classes': ('collapse',),
         }),
     )
+
+    def has_add_permission(self, request) -> bool:
+        return False
+
+
+    def has_change_permission(self, request) -> bool:
+        return False
 
 class InventoryTransactionAdmin(admin.ModelAdmin):
     list_display = ('product_variant', 'transaction_type', 'quantity', 'description', 'created_at', 'updated_at')
