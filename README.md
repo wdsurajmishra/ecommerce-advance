@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ecommerce Advance
 
 ## Overview
@@ -49,12 +48,3 @@ Then, open your web browser and go to `http://127.0.0.1:8000/` to see the applic
 ## Contributing
 
 We welcome contributions to enhance the features and capabilities of this project. Please fork the repository and submit pull requests.
-=======
-First You Need To Install All Packages 
-
-Step 1 -  pip install -r req.txt
-
-Step 2 - python manage.py migrate
-
-
->>>>>>> 031a477b3d944d7b0bc0e1508d7c96a9e48f1579
